@@ -5,88 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bitcoin Información</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Estilo del menú */
-    .navbar {
+    /* Estilos básicos para la barra de navegación */
+    nav {
+      background-color: #333;
+      overflow: hidden;
       display: flex;
       justify-content: center;
-      background-color: #333;
-      padding: 10px 0;
     }
-
-    .navbar a {
+    nav a {
       color: white;
       text-decoration: none;
       padding: 14px 20px;
+      display: block;
       text-align: center;
     }
-
-    .navbar a:hover {
+    nav a:hover {
       background-color: #575757;
-      color: white;
     }
-
-    /* Contenido centrado */
-    .content {
-      text-align: center;
+    section {
       padding: 20px;
+      text-align: center;
     }
-
-    .section {
-      margin: 40px 20px;
-    }
-
-    .section h1 {
+    h1, h2 {
       color: #333;
     }
-
-    .section p {
+    p {
       color: #555;
       line-height: 1.6;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <!-- Menú superior -->
-  <div class="navbar">
+  <!-- Menú de navegación -->
+  <nav>
     <a href="#que-es-bitcoin">¿Qué es Bitcoin?</a>
-    <a href="#como-funciona">¿Cómo funciona Bitcoin?</a>
+    <a href="#como-funciona">¿Cómo funciona?</a>
     <a href="#contacto">Contacto</a>
-  </div>
+  </nav>
 
-  <!-- Contenido -->
-  <div class="content">
-    <section id="que-es-bitcoin" class="section">
-      <h1>¿Qué es Bitcoin?</h1>
-      <p>
-        Bitcoin es una moneda digital descentralizada que opera sin necesidad de una autoridad central o banco. Fue creada en 2009 por una persona o grupo bajo el seudónimo de Satoshi Nakamoto.
-      </p>
-    </section>
+  <!-- Sección: ¿Qué es Bitcoin? -->
+  <section id="que-es-bitcoin">
+    <h1>¿Qué es Bitcoin?</h1>
+    <p>
+      Bitcoin es una criptomoneda descentralizada que permite realizar transacciones digitales sin la necesidad de intermediarios como bancos. Fue creada en 2009 por una persona o grupo bajo el seudónimo de Satoshi Nakamoto.
+    </p>
+  </section>
 
-    <section id="como-funciona" class="section">
-      <h1>¿Cómo funciona Bitcoin?</h1>
-      <p>
-        Bitcoin utiliza una tecnología llamada blockchain, que es un libro contable público distribuido. Las transacciones se validan a través de un proceso llamado minería, donde se usan computadoras para resolver problemas matemáticos complejos y garantizar la seguridad de la red.
-      </p>
-    </section>
-  </div>
+  <!-- Sección: ¿Cómo funciona Bitcoin? -->
+  <section id="como-funciona">
+    <h2>¿Cómo funciona Bitcoin?</h2>
+    <p>
+      Bitcoin utiliza una tecnología llamada blockchain, que es un libro de contabilidad distribuido y seguro. Las transacciones se verifican por una red de computadoras llamada nodos, y una vez confirmadas, se agregan a la cadena de bloques.
+    </p>
+    <p>
+      Los usuarios pueden almacenar sus bitcoins en carteras digitales (wallets) y enviarlos o recibirlos a través de direcciones únicas.
+    </p>
+  </section>
 
-  <!-- Pie de página -->
-  <footer id="contacto">
-    <p>Creado por Edgar Colucci | <a href="https://github.com/edgarcolucci" style="color: white;">Mi GitHub</a></p>
-  </footer>
+  <!-- Sección de contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Para más información, puedes contactarnos en: <a href="mailto:info@bitcoin.com">info@bitcoin.com</a>.</p>
+  </section>
 </body>
 </html>
