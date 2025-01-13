@@ -3,51 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bitcoin Información</title>
+  <title>Información sobre Bitcoin</title>
   <style>
-    /* Estilos básicos para la barra de navegación */
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    /* Barra de navegación */
     nav {
-      background-color: #333;
-      overflow: hidden;
+      background-color: orange;
+      color: white;
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    nav ul {
+      list-style: none;
       display: flex;
       justify-content: center;
+      margin: 0;
+      padding: 0;
     }
-    nav a {
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
       color: white;
       text-decoration: none;
-      padding: 14px 20px;
-      display: block;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Encabezado principal */
+    header {
+      background-color: #f4f4f4;
+      padding: 50px 20px;
       text-align: center;
+      margin-top: 60px; /* Espacio para la barra fija */
     }
-    nav a:hover {
-      background-color: #575757;
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
-    section {
-      padding: 20px;
-      text-align: center;
-    }
-    h1, h2 {
-      color: #333;
-    }
-    p {
+    header p {
+      font-size: 1.2rem;
       color: #555;
-      line-height: 1.6;
+    }
+
+    /* Secciones */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    section:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: orange;
+    }
+    section p {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    footer p {
+      margin: 0;
+    }
+
+    /* Navegación interna */
+    a {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
 <body>
-  <!-- Menú de navegación -->
+  <!-- Barra de navegación -->
   <nav>
-    <a href="#que-es-bitcoin">¿Qué es Bitcoin?</a>
-    <a href="#como-funciona">¿Cómo funciona?</a>
-    <a href="#contacto">Contacto</a>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#que-es-bitcoin">¿Qué es Bitcoin?</a></li>
+      <li><a href="#como-funciona">¿Cómo funciona?</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
   </nav>
+
+  <!-- Encabezado principal -->
+  <header id="inicio">
+    <h1>Bienvenidos a la página de Bitcoin</h1>
+    <p>Descubre todo sobre Bitcoin: qué es, cómo funciona y por qué es importante.</p>
+  </header>
 
   <!-- Sección: ¿Qué es Bitcoin? -->
   <section id="que-es-bitcoin">
-    <h1>¿Qué es Bitcoin?</h1>
+    <h2>¿Qué es Bitcoin?</h2>
     <p>
-      Bitcoin es una criptomoneda descentralizada que permite realizar transacciones digitales sin la necesidad de intermediarios como bancos. Fue creada en 2009 por una persona o grupo bajo el seudónimo de Satoshi Nakamoto.
+      Bitcoin es una moneda digital descentralizada, creada en 2009 por un desarrollador (o grupo de desarrolladores) bajo el seudónimo de Satoshi Nakamoto. A diferencia de las monedas tradicionales, Bitcoin no depende de bancos centrales o gobiernos, y permite transacciones directas entre usuarios.
     </p>
   </section>
 
@@ -55,17 +126,21 @@
   <section id="como-funciona">
     <h2>¿Cómo funciona Bitcoin?</h2>
     <p>
-      Bitcoin utiliza una tecnología llamada blockchain, que es un libro de contabilidad distribuido y seguro. Las transacciones se verifican por una red de computadoras llamada nodos, y una vez confirmadas, se agregan a la cadena de bloques.
-    </p>
-    <p>
-      Los usuarios pueden almacenar sus bitcoins en carteras digitales (wallets) y enviarlos o recibirlos a través de direcciones únicas.
+      Bitcoin utiliza una tecnología llamada blockchain, una base de datos distribuida que registra todas las transacciones. Cada "bloque" de datos está conectado al anterior, creando una cadena segura e inmutable. Los usuarios almacenan sus bitcoins en billeteras digitales y pueden enviarlos o recibirlos utilizando claves criptográficas.
     </p>
   </section>
 
-  <!-- Sección de contacto -->
+  <!-- Sección: Contacto -->
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>Para más información, puedes contactarnos en: <a href="mailto:info@bitcoin.com">info@bitcoin.com</a>.</p>
+    <p>
+      Si tienes alguna pregunta o quieres saber más sobre Bitcoin, no dudes en enviarnos un mensaje. ¡Estamos aquí para ayudarte!
+    </p>
   </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Información sobre Bitcoin. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
