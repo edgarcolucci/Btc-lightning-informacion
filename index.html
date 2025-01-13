@@ -1,115 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hola Construye tu Propio Banco en Casa</title>
-    <style>
-        /* Estilos básicos */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .hero {
-            background-color: #f7931a;
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .hero h1 {
-            font-size: 2.5em;
-        }
-        .hero p {
-            font-size: 1.2em;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-    </style>
-</head>
-    <!DOCTYPE html>
-<html lang="es">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página Bitcoin</title>
+  <title>Bitcoin Información</title>
   <style>
-    /* Estilo para el menú */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilo del menú */
     .navbar {
       display: flex;
       justify-content: center;
       background-color: #333;
-      padding: 10px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      padding: 10px 0;
     }
 
     .navbar a {
       color: white;
       text-decoration: none;
-      padding: 10px 20px;
-      margin: 0 5px;
-      font-family: Arial, sans-serif;
+      padding: 14px 20px;
+      text-align: center;
     }
 
     .navbar a:hover {
       background-color: #575757;
-      border-radius: 5px;
+      color: white;
+    }
+
+    /* Contenido centrado */
+    .content {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .section {
+      margin: 40px 20px;
+    }
+
+    .section h1 {
+      color: #333;
+    }
+
+    .section p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <!-- Menú de navegación -->
+  <!-- Menú superior -->
   <div class="navbar">
     <a href="#que-es-bitcoin">¿Qué es Bitcoin?</a>
-    <a href="#como-funciona">¿Cómo funciona?</a>
+    <a href="#como-funciona">¿Cómo funciona Bitcoin?</a>
     <a href="#contacto">Contacto</a>
   </div>
 
-  <!-- Contenido de la página -->
-  <section id="que-es-bitcoin" style="text-align: center; margin-top: 50px;">
-    <h1>¿Qué es Bitcoin?</h1>
-    <p>Bitcoin es una moneda digital descentralizada...</p>
-  </section>
+  <!-- Contenido -->
+  <div class="content">
+    <section id="que-es-bitcoin" class="section">
+      <h1>¿Qué es Bitcoin?</h1>
+      <p>
+        Bitcoin es una moneda digital descentralizada que opera sin necesidad de una autoridad central o banco. Fue creada en 2009 por una persona o grupo bajo el seudónimo de Satoshi Nakamoto.
+      </p>
+    </section>
 
-  <section id="como-funciona" style="text-align: center; margin-top: 50px;">
-    <h1>¿Cómo funciona Bitcoin?</h1>
-    <p>Bitcoin funciona a través de una red de blockchain...</p>
-  </section>
+    <section id="como-funciona" class="section">
+      <h1>¿Cómo funciona Bitcoin?</h1>
+      <p>
+        Bitcoin utiliza una tecnología llamada blockchain, que es un libro contable público distribuido. Las transacciones se validan a través de un proceso llamado minería, donde se usan computadoras para resolver problemas matemáticos complejos y garantizar la seguridad de la red.
+      </p>
+    </section>
+  </div>
 
-  <section id="contacto" style="text-align: center; margin-top: 50px;">
-    <h1>Contacto</h1>
-    <p>Si tienes preguntas, no dudes en contactarnos.</p>
-  </section>
+  <!-- Pie de página -->
+  <footer id="contacto">
+    <p>Creado por Edgar Colucci | <a href="https://github.com/edgarcolucci" style="color: white;">Mi GitHub</a></p>
+  </footer>
 </body>
 </html>
-<body>
-    <header class="hero">
-        <h1>Construye tu Propio Banco en Casa</h1>
-        <p>Independencia Financiera y Privacidad Total para Comercios y Familias</p>
-    </header>
-    <main class="container">
-        <section class="section">
-            <h2>¿Qué Ofrecemos?</h2>
-            <p>Instalamos sistemas personalizados de Bitcoin y Lightning Network para que puedas tener control total sobre tus finanzas.</p>
-       <section style="text-align: center;">
-  <h2>¿Qué es Bitcoin?</h2>
-  <p>
-    Bitcoin es una moneda digital descentralizada que funciona sin la necesidad de una autoridad central 
-    o un banco. Utiliza una tecnología llamada blockchain para registrar transacciones de manera segura 
-    y transparente.
-  </p>
-  <h3>¿Cómo funciona?</h3>
-  <p>
-    Bitcoin opera a través de una red de computadoras distribuidas que verifican y confirman transacciones. 
-    Las transacciones se agrupan en bloques que se agregan a la blockchain mediante un proceso conocido 
-    como minería.
-  </p>
-</section>
