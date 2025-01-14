@@ -8,6 +8,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Información sobre Bitcoin y Servicios de Instalación</title>
   <style>
+    /* Media Queries para Pantallas Pequeñas (móviles) */
+@media (max-width: 768px) {
+  /* Ajustar el tamaño de la barra de navegación */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  /* Ajuste de la barra de navegación (espaciado) */
+  nav {
+    padding: 0.8rem 0;
+  }
+
+  /* Ajustar el tamaño de la fuente en el cuerpo */
+  body {
+    font-size: 14px;
+    padding-top: 80px; /* Añadir un poco más de espacio por si el menú se colapsa */
+  }
+
+  /* Asegurarse de que los elementos del contenido se ajusten al ancho */
+  .content {
+    padding: 20px;
+  }
+}
+
+/* Media Queries para Pantallas Muy Pequeñas (teléfonos en modo vertical) */
+@media (max-width: 480px) {
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  /* Reducir los márgenes y los paddings para dispositivos muy pequeños */
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  /* Ajustar el tamaño de la fuente aún más si es necesario */
+  body {
+    font-size: 13px;
+  }
+}
     ul, ol {
     list-style-type: none; /* Elimina los puntos o números */
     padding-left: 0; /* Elimina el espacio a la izquierda */
