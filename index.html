@@ -7,6 +7,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
+    /* Media Queries para Pantallas Pequeñas (móviles y tabletas) */
+@media (max-width: 768px) {
+  /* Ocultar la barra superior en dispositivos móviles y tabletas */
+  .barra-superior {
+    display: none;
+  }
+
+  /* Ajustar la barra de navegación */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  /* Ajuste de la barra de navegación (espaciado) */
+  nav {
+    padding: 0.8rem 0;
+  }
+
+  /* Ajustar el tamaño de la fuente en el cuerpo */
+  body {
+    font-size: 14px;
+  }
+}
     Información sobre Bitcoin y Servicios de Instalación</title>
   <style>
     <head>
