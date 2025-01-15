@@ -213,10 +213,30 @@
       <li>Flexibilidad: Es compatible con hardware como Umbrel, myNode.</li>
     </ul>
     <!-- Video de YouTube -->
-<div style="text-align: center; margin-top: 20px;">
+<div class="video-container" style="text-align: center; margin-top: 20px;">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/9n81qnzlPf8?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-    <section id="servicios">
+
+<style>
+  /* Estilos para hacer el video responsivo */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 0 auto;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>    <section id="servicios">
       <h2 style="color: #6A5ACD;">Servicios que Ofrezco</h2>
       <ul>
         <li><strong>Instalación:</strong> Configuro el sistema completo para aceptar pagos con Bitcoin y Lightning Network en tu comercio, Casa y tu familia.</li>
