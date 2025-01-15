@@ -1,110 +1,58 @@
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
-  <head>
-  <!-- Link para Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    
-  </title>
-  }
-}
-    Información sobre Bitcoin y Servicios de Instalación</title>
+  <title>Información sobre Bitcoin y Servicios de Instalación</title>
+  <!-- Link para Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     /* Media Queries para Pantallas Pequeñas (móviles y tabletas) */
-@media (max-width: 768px) {
-  /* Ocultar la barra superior en dispositivos móviles y tabletas */
-  .barra-superior {
-    display: none;
-  }
+    @media (max-width: 768px) {
+      /* Ocultar la barra superior en dispositivos móviles y tabletas */
+      .barra-superior {
+        display: none;
+      }
+      /* Ajustar la barra de navegación */
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+      nav ul li a {
+        font-size: 1.2rem;
+      }
+      /* Ajuste de la barra de navegación (espaciado) */
+      nav {
+        padding: 0.8rem 0;
+      }
+      /* Ajustar el tamaño de la fuente en el cuerpo */
+      body {
+        font-size: 14px;
+      }
+    }
+    
+    /* Media Queries para Pantallas Muy Pequeñas (teléfonos en modo vertical) */
+    @media (max-width: 480px) {
+      nav ul li a {
+        font-size: 1rem;
+      }
+      /* Reducir los márgenes y los paddings para dispositivos muy pequeños */
+      nav ul li {
+        margin: 8px 0;
+      }
+      /* Ajustar el tamaño de la fuente aún más si es necesario */
+      body {
+        font-size: 13px;
+      }
+    }
 
-  /* Ajustar la barra de navegación */
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  nav ul li a {
-    font-size: 1.2rem;
-  }
-
-  /* Ajuste de la barra de navegación (espaciado) */
-  nav {
-    padding: 0.8rem 0;
-  }
-
-  /* Ajustar el tamaño de la fuente en el cuerpo */
-  body {
-    font-size: 14px;
-  }
-}
-    <head>
-}
-    /* Media Queries para Pantallas Pequeñas (móviles) */
-@media (max-width: 768px) {
-  /* Ajustar el tamaño de la barra de navegación */
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  nav ul li a {
-    font-size: 1.2rem;
-  }
-
-  /* Ajuste de la barra de navegación (espaciado) */
-  nav {
-    padding: 0.8rem 0;
-  }
-
-  /* Ajustar el tamaño de la fuente en el cuerpo */
-  body {
-    font-size: 14px;
-    padding-top: 80px; /* Añadir un poco más de espacio por si el menú se colapsa */
-  }
-
-  /* Asegurarse de que los elementos del contenido se ajusten al ancho */
-  .content {
-    padding: 20px;
-  }
-}
-
-/* Media Queries para Pantallas Muy Pequeñas (teléfonos en modo vertical) */
-@media (max-width: 480px) {
-  nav ul li a {
-    font-size: 1rem;
-  }
-
-  /* Reducir los márgenes y los paddings para dispositivos muy pequeños */
-  nav ul li {
-    margin: 8px 0;
-  }
-
-  /* Ajustar el tamaño de la fuente aún más si es necesario */
-  body {
-    font-size: 13px;
-  }
-}
-    ul, ol {
-    list-style-type: none; /* Elimina los puntos o números */
-    padding-left: 0; /* Elimina el espacio a la izquierda */
-    margin-left: 0; /* Elimina el margen a la izquierda */
-}
     /* Estilos generales */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      
       line-height: 1.6;
     }
 
@@ -193,8 +141,9 @@
       <li><a href="#seccion1">Introducción</a></li>
       <li><a href="#seccion2">¿Qué es Bitcoin?</a></li>
       <li><a href="#seccion3">Beneficios</a></li>
-      <li><a href="#seccion5">Servicios de Instalación</a></li>
-      <li><a href="#seccion6">Lightning Network</a></li>
+      <li><a href="#seccion4">Servicios de Instalación</a></li>
+      <li><a href="#seccion5">Lightning Network</a></li>
+      <li><a href="#faq">FAQ</a></li>
     </ul>
   </nav>
 
@@ -213,16 +162,15 @@
     <p>Bitcoin es una criptomoneda que utiliza la tecnología blockchain, para registrar sus transacciones y permite realizar transacciones seguras a través de una red de computadoras distribuidas por el mundo. Fue inventada por una persona o grupo bajo el seudónimo de Satoshi Nakamoto.</p>
   </section>
   <div style="display: flex; justify-content: center; margin-top: 20px;">
-  <a href="https://bitcoin.org/files/bitcoin-paper/bitcoin_es_latam.pdf" target="_blank">Ver el documento Bitcoin en PDF</a>
-</div>
-    </a>
+    <a href="https://bitcoin.org/files/bitcoin-paper/bitcoin_es_latam.pdf" target="_blank">Ver el documento Bitcoin en PDF</a>
+  </div>
 
   <section id="seccion3">
     <h2>Beneficios</h2>
     <p>Algunos de los beneficios de Bitcoin incluyen su descentralización, lo que lo hace resistente a la censura, su capacidad para facilitar transacciones internacionales rápidas y económicas, y su potencial como refugio de valor.</p>
   </section>
 
-   <section id="seccion4">
+  <section id="seccion4">
     <h2>Servicios de Instalación de Hardware y Sistemas de Pago</h2>
     <p>Ofrezco una completa instalación de hardware para facilitar el uso de Bitcoin en tu vida diaria o en tu negocio. o la intalacion de software teniendo el control total utilizando nuestros propios nodos Esto incluye:</p>
     <ul>
@@ -233,83 +181,131 @@
     <p>Estos servicios están diseñados para simplificar el proceso de adopción de Bitcoin, tanto para pequeños negocios como para familias que deseen gestionar sus finanzas con bitcoin=Satoshis.</p>
   </section>
   
-<section>
-      <h2>¿Cómo lo Instalo?</h2>
-      <p>El proceso es sencillo me encargo de todo. Aquí está el flujo básico:</p>
-      <ol>
-        <li><strong>Contacta conmigo:</strong> Simplemente llama o envíame un mensaje para comenzar y te explicare todo lo necesario para que puedas comprender como funciona.</li>
-        <li><strong>Configuración del Sistema:</strong> Instalare y configurare el software necesario (BTCPay Server) y configurare el hardware adecuado (por ejemplo, Umbrel o myNode) para que tu sistema de pagos esté listo o usamos nuestros propios nodos para tener mas seguridad.</li>
-        <section id="configuracion-pos">
-  <h2>Configuración POS</h2>
-  <p>
-    Configuro el sistema POS de tu tienda para generar los pagos directamente desde el dispositivo, como se hace con los pagos tradicionales.
-  </p>
-</section>
-        <li><strong>Pruebas y Verificación:</strong> Realizaro pruebas para asegurar de que todo funcione correctamente, incluyendo la integración de Lightning Network.</li>
-        <li><strong>Soporte Continuo:</strong> Te proporcino capacitación sobre cómo usar el sistema y estare disponible para soporte técnico en cualquier momento que lo necesites.</li>
-      </ol>
-    </section>
+  <section>
+    <h2>¿Cómo lo Instalo?</h2>
+    <p>El proceso es sencillo me encargo de todo. Aquí está el flujo básico:</p>
+    <ol>
+      <li><strong>Contacta conmigo:</strong> Simplemente llama o envíame un mensaje para comenzar y te explicare todo lo necesario para que puedas comprender como funciona.</li>
+      <li><strong>Configuración del Sistema:</strong> Instalare y configurare el software necesario (BTCPay Server) y configurare el hardware adecuado (por ejemplo, Umbrel o myNode) para que tu sistema de pagos esté listo o usamos nuestros propios nodos para tener mas seguridad.</li>
+      <li><strong>Pruebas y Verificación:</strong> Realizaro pruebas para asegurar de que todo funcione correctamente, incluyendo la integración de Lightning Network.</li>
+      <li><strong>Soporte Continuo:</strong> Te proporcino capacitación sobre cómo usar el sistema y estare disponible para soporte técnico en cualquier momento que lo necesites.</li>
+    </ol>
+  </section>
   
   <section id="seccion5">
-   <h2 style="color: #8A2BE2;">
-  Lightning Network <i class="fas fa-bolt"></i>
-</h2>
-</h2>
+    <h2 style="color: #8A2BE2;">Lightning Network <i class="fas fa-bolt"></i></h2>
     <p>El Lightning Network es una solución de segunda capa para Bitcoin, que permite realizar transacciones instantáneas y de bajo costo. Utiliza canales de pago privados que no requieren confirmación en la cadena de bloques, lo que hace que las transacciones sean mucho más rápidas.</p>
     <p>Con Lightning Network, puedes enviar y recibir pagos de Bitcoin en tiempo real, lo que es ideal para comerciantes, empresas y usuarios que requieren transacciones inmediatas.</p>
     <p>Además, puedo ayudarte a integrar Lightning Network en tu sistema de pagos, optimizando el uso de Bitcoin en tu negocio o hogar.</p>
   </section>
   <div style="display: flex; justify-content: center; margin-top: 20px;">
-  <a href="https://es.cointelegraph.com/learn/articles/what-is-the-lightning-network-in-bitcoin-and-how-does-it-work" target="_blank">Leer sobre Lightning Network</a>
-</div>
+    <a href="https://es.cointelegraph.com/learn/articles/what-is-the-lightning-network-in-bitcoin-and-how-does-it-work" target="_blank">Leer sobre Lightning Network</a>
+  </div>
   
   <section id="btcpay-server">
-  <h2 style="color: #008000;">¿Qué es BTCPay Server?</h2>
-  <p>
-    <strong>BTCPay Server</strong> es una herramienta de código abierto que permite a los comerciantes aceptar pagos en <strong>Bitcoin</strong> de manera directa, sin necesidad de intermediarios ni procesadores de pago tradicionales.
-  </p>
-  <p>
-    Esto significa que tú, como comerciante, tienes control total sobre tus fondos y puedes ofrecer una solución de pago moderna y eficiente a tus clientes.
-  </p>
-  <h3 style="color: #008000;">Ventajas de BTCPay Server:</h3>
-  <ul>
-    <li>Independencia total: Controlas tus fondos sin intermediarios.</li>
-    <li>Bajos costos: Sin tarifas elevadas por procesamiento de pagos.</li>
-    <li>Compatibilidad: Se integra fácilmente con soluciones como <strong>Lightning Network</strong>.</li>
-    <li>Seguridad: Todas las transacciones son encriptadas y gestionadas de manera privada.</li>
-    <li>Flexibilidad: Es compatible con hardware como Umbrel, myNode.</li>
-  </ul>
+    <h2 style="color: #008000;">¿Qué es BTCPay Server?</h2>
+    <p><strong>BTCPay Server</strong> es una herramienta de código abierto que permite a los comerciantes aceptar pagos en <strong>Bitcoin</strong> de manera directa, sin necesidad de intermediarios ni procesadores de pago tradicionales.</p>
+    <p>Esto significa que tú, como comerciante, tienes control total sobre tus fondos y puedes ofrecer una solución de pago moderna y eficiente a tus clientes.</p>
+    <h3 style="color: #008000;">Ventajas de BTCPay Server:</h3>
+    <ul>
+      <li>Independencia total: Controlas tus fondos sin intermediarios.</li>
+      <li>Bajos costos: Sin tarifas elevadas por procesamiento de pagos.</li>
+      <li>Compatibilidad: Se integra fácilmente con soluciones como <strong>Lightning Network</strong>.</li>
+      <li>Seguridad: Todas las transacciones son encriptadas y gestionadas de manera privada.</li>
+      <li>Flexibilidad: Es compatible con hardware como Umbrel, myNode.</li>
+    </ul>
 
     <section id="servicios">
-  <h2 style="color: #6A5ACD;">Servicios que Ofrezco</h2>
-  <ul>
-    <li><strong>Instalación:</strong> Configuro el sistema completo para aceptar pagos con Bitcoin y Lightning Network en tu comercio, Casa y tu familia.</li>
-    <li><strong>Funcionamiento:</strong> Aseguro que todos los componentes, como nodos, wallets y BTCPay Server, estén configurados y operativos.</li>
-    <li><strong>Capacitación:</strong> Te enseño cómo usar el sistema, gestionar pagos y resolver dudas.</li>
-    <li><strong>Mantenimiento:</strong> Realizo actualizaciones y monitoreo para garantizar un funcionamiento óptimo.</li>
-    <li><strong>Soporte:</strong> Estoy disponible para resolver problemas técnicos y brindar asistencia cuando la necesites.</li>
-    <li><strong>Información:</strong> Te proporciono material y guía para que comprendas el sistema y sus beneficios.</li>
-  </ul>
-<p>Para más información, consulta la <a href="https://docs.btcpayserver.org/Guide" target="_blank" rel="noopener">Documentación de BTCPayServer</a>.</p>
-</section>
-  <p>
-    Con BTCPay Server, transformarás tu negocio al ofrecer un método de pago innovador, seguro y descentralizado.
-  </p>
-</section>
+      <h2 style="color: #6A5ACD;">Servicios que Ofrezco</h2>
+      <ul>
+        <li><strong>Instalación:</strong> Configuro el sistema completo para aceptar pagos con Bitcoin y Lightning Network en tu comercio, Casa y tu familia.</li>
+        <li><strong>Funcionamiento:</strong> Aseguro que todos los componentes, como nodos, wallets y BTCPay Server, estén configurados y operativos.</li>
+        <li><strong>Capacitación:</strong> Te enseño cómo usar el sistema, gestionar pagos y resolver dudas.</li>
+        <li><strong>Mantenimiento:</strong> Realizo actualizaciones y monitoreo para garantizar un funcionamiento óptimo.</li>
+        <li><strong>Soporte:</strong> Estoy disponible para resolver problemas técnicos y brindar asistencia cuando la necesites.</li>
+        <li><strong>Información:</strong> Te proporciono material y guía para que comprendas el sistema y sus beneficios.</li>
+      </ul>
+      <p>Para más información, consulta la <a href="https://docs.btcpayserver.org/Guide" target="_blank" rel="noopener">Documentación de BTCPayServer</a>.</p>
+    </section>
+    <p>Con BTCPay Server, transformarás tu negocio al ofrecer un método de pago innovador, seguro y descentralizado.</p>
+  </section>
+
+  <!-- Sección de Preguntas Frecuentes (FAQ) -->
+  <section id="faq">
+    <h2>Preguntas Frecuentes</h2>
+    <h3>¿Qué es Bitcoin?</h3>
+    <p>Es una moneda digital descentralizada que permite transacciones directas entre personas sin intermediarios.</p>
+
+    <h3>¿Cómo funciona Bitcoin?</h3>
+    <p>Bitcoin utiliza tecnología blockchain para registrar y verificar transacciones en una red distribuida.</p>
+
+    <h3>¿Cómo puedo comprar Bitcoin?</h3>
+    <p>Puedes comprar Bitcoin en plataformas de intercambio (exchanges) como Binance, Coinbase o Kraken.</p>
+
+    <h3>Seguridad</h3>
+    <h4>¿Es seguro usar Bitcoin?</h4>
+    <p>Sí, siempre que tomes medidas de seguridad como usar billeteras seguras y evitar compartir tus claves privadas.</p>
+
+    <h4>¿Qué pasa si pierdo mis claves privadas?</h4>
+    <p>Si pierdes tus claves privadas, no podrás acceder a tus Bitcoin. Es importante hacer copias de seguridad.</p>
+
+    <h4>¿Cómo evito las estafas relacionadas con Bitcoin?</h4>
+    <p>Siempre verifica la autenticidad de los sitios web, evita ofertas "demasiado buenas para ser verdad" y no envíes Bitcoin a desconocidos.</p>
+
+    <h3>Uso y Transacciones</h3>
+    <h4>¿Dónde puedo usar Bitcoin?</h4>
+    <p>Puedes usar Bitcoin en negocios que lo acepten como método de pago, tanto en línea como en tiendas físicas.</p>
+
+    <h4>¿Cuánto tarda una transacción de Bitcoin?</h4>
+    <p>Dependiendo de la congestión de la red, puede tardar entre 10 minutos y una hora.</p>
+
+    <h4>¿Qué son las tarifas de transacción?</h4>
+    <p>Son pequeños costos pagados a los mineros por procesar y confirmar transacciones en la red.</p>
+
+    <h3>Minería y Blockchain</h3>
+    <h4>¿Qué es la minería de Bitcoin?</h4>
+    <p>Es el proceso de resolver problemas matemáticos para agregar bloques a la blockchain y recibir recompensas en BTC.</p>
+
+    <h4>¿Puedo minar Bitcoin desde casa?</h4>
+    <p>Aunque es posible, la minería de Bitcoin requiere hardware especializado y un alto consumo de energía, lo que puede ser costoso.</p>
+
+    <h4>¿Qué es la blockchain?</h4>
+    <p>Es un libro de contabilidad digital descentralizado que registra todas las transacciones de Bitcoin.</p>
+
+    <h3>Regulaciones e Impuestos</h3>
+    <h4>¿Es legal usar Bitcoin?</h4>
+    <p>Depende del país. En muchos lugares es legal, pero puede estar regulado.</p>
+
+    <h4>¿Tengo que pagar impuestos por mis Bitcoin?</h4>
+    <p>En la mayoría de los países, debes declarar las ganancias obtenidas al vender o usar Bitcoin.</p>
+
+    <h4>¿Puede el gobierno controlar Bitcoin?</h4>
+    <p>Debido a su naturaleza descentralizada, ningún gobierno puede controlar Bitcoin directamente, aunque pueden regular su uso.</p>
+
+    <h3>Inversión</h3>
+    <h4>¿Es una buena idea invertir en Bitcoin?</h4>
+    <p>Bitcoin es una inversión volátil. Solo invierte lo que estés dispuesto a perder y realiza tu propia investigación.</p>
+
+    <h4>¿Qué afecta el precio de Bitcoin?</h4>
+    <p>La oferta y la demanda, las noticias, las regulaciones y las actualizaciones tecnológicas pueden influir en el precio.</p>
+
+    <h4>¿Es Bitcoin una burbuja?</h4>
+    <p>Algunos lo consideran un activo especulativo, mientras que otros lo ven como el futuro de las finanzas.</p>
+  </section>
 
   <!-- Sección de Contacto -->
-<section id="contacto">
-  <h2>Contacto</h2>
-  <p>Si deseas más información o contratar el servicios, puedes contactarme a través de los siguientes medios:</p>
-  <ul style="list-style: none; padding: 0;">
-    <li>Correo electrónico: <a href="mailto:edgar@colucci.io">edgar@colucci.io</a></li>
-    <li>Teléfono: +34 675258720</li>
-    <li>Dirección: Marbella, Malaga, España</li>
-  </ul>
-</section>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Si deseas más información o contratar el servicios, puedes contactarme a través de los siguientes medios:</p>
+    <ul style="list-style: none; padding: 0;">
+      <li>Correo electrónico: <a href="mailto:edgar@colucci.io">edgar@colucci.io</a></li>
+      <li>Teléfono: +34 675258720</li>
+      <li>Dirección: Marbella, Malaga, España</li>
+    </ul>
+  </section>
   
-<footer style="background-color: black; color: white; text-align: center; padding: 1rem;">
+  <footer style="background-color: black; color: white; text-align: center; padding: 1rem;">
     <p>© 2025 Bitcoin Servicios de Instalación y sistemas de pago. Todos los derechos reservados.</p>
-</footer>
+  </footer>
 </body>
 </html>
