@@ -7,48 +7,6 @@
   <!-- Link para Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    /* Media Queries para Pantallas Pequeñas (móviles y tabletas) */
-    @media (max-width: 768px) {
-      /* Ocultar la barra superior en dispositivos móviles y tabletas */
-      .barra-superior {
-        display: none;
-      }
-      /* Ajustar la barra de navegación */
-      nav ul {
-        flex-direction: column;
-        align-items: center;
-      }
-      nav ul li {
-        margin: 10px 0;
-      }
-      nav ul li a {
-        font-size: 1.2rem;
-      }
-      /* Ajuste de la barra de navegación (espaciado) */
-      nav {
-        padding: 0.8rem 0;
-      }
-      /* Ajustar el tamaño de la fuente en el cuerpo */
-      body {
-        font-size: 14px;
-      }
-    }
-    
-    /* Media Queries para Pantallas Muy Pequeñas (teléfonos en modo vertical) */
-    @media (max-width: 480px) {
-      nav ul li a {
-        font-size: 1rem;
-      }
-      /* Reducir los márgenes y los paddings para dispositivos muy pequeños */
-      nav ul li {
-        margin: 8px 0;
-      }
-      /* Ajustar el tamaño de la fuente aún más si es necesario */
-      body {
-        font-size: 13px;
-      }
-    }
-
     /* Estilos generales */
     body {
       font-family: Arial, sans-serif;
@@ -60,7 +18,7 @@
     nav {
       background-color: orange;
       color: white;
-      padding: 1rem 0;
+      padding: 1rem;
       position: fixed;
       width: 100%;
       top: 0;
@@ -85,6 +43,28 @@
     }
     nav ul li a:hover {
       text-decoration: underline;
+    }
+
+    /* Botón de menú hamburguesa */
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* Media Queries para Pantallas Pequeñas (móviles y tabletas) */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+      }
+      nav ul.showing {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
     }
 
     /* Encabezado principal */
@@ -123,18 +103,6 @@
       margin: 0 auto;
     }
 
-    /* Lista sin estilo */
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-      margin-left: 0;
-    }
-    ol {
-      list-style-type: none;
-      padding-left: 0;
-      margin-left: 0;
-    }
-
     /* Pie de página */
     footer {
       background-color: #333;
@@ -149,7 +117,8 @@
 </head>
 <body>
   <nav>
-    <ul>
+    <span class="menu-toggle" id="menu-toggle">☰</span>
+    <ul id="menu">
       <li><a href="#seccion1">Introducción</a></li>
       <li><a href="#seccion2">¿Qué es Bitcoin?</a></li>
       <li><a href="#seccion3">Beneficios</a></li>
@@ -157,6 +126,7 @@
       <li><a href="#seccion5">Lightning Network</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contacto">Contacto</a></li>
+      <li><a href="seguiente.html">Página Siguiente</a></li>
     </ul>
   </nav>
 
@@ -270,8 +240,7 @@
     <p>Puedes usar Bitcoin en negocios que lo acepten como método de pago, tanto en línea como en tiendas físicas.</p>
 
     <h4>¿Cuánto tarda una transacción de Bitcoin?</h4>
-    <p>Dependiendo de la congestión de la red, puede tardar entre 10 minutos y una hora.
-    esto se soluciona con la capa dos lightning network las transacciones son inmediatas con muy bajo costo.</p>
+    <p>Dependiendo de la congestión de la red, puede tardar entre 10 minutos y una hora.</p>
 
     <h4>¿Qué son las tarifas de transacción?</h4>
     <p>Son pequeños costos pagados a los mineros por procesar y confirmar transacciones en la red.</p>
@@ -289,6 +258,9 @@
     <h3>Regulaciones e Impuestos</h3>
     <h4>¿Es legal usar Bitcoin?</h4>
     <p>Depende del país. En muchos lugares es legal, pero puede estar regulado.</p>
+
+    <h4>¿Tengo que pagar impuestos por mis Bitcoin?</h4>
+    <p>En la mayoría de los países, debes declarar las ganancias obtenidas al vender o usar Bitcoin.</p>
 
     <h4>¿Puede el gobierno controlar Bitcoin?</h4>
     <p>Debido a su naturaleza descentralizada, ningún gobierno puede controlar Bitcoin directamente, aunque pueden regular su uso.</p>
@@ -318,5 +290,15 @@
   <footer style="background-color: black; color: white; text-align: center; padding: 1rem;">
     <p>© 2025 Bitcoin Servicios de Instalación y sistemas de pago. Todos los derechos reservados.</p>
   </footer>
+
+  <!-- JavaScript para el menú hamburguesa -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('showing');
+    });
+  </script>
 </body>
 </html>
